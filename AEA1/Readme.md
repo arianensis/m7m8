@@ -13,10 +13,10 @@ Inside the repository you will find:
 To try this app you have to:
 1. Copy the .apk to an Android device
 2. Open it from the Android system
-  1. Android will ask for permission to install unknown apps if not already given
+   1. Android will ask for permission to install unknown apps if not already given
 3. Open the app once installed
 4. Open the form and click the Login button
-  1. Use the user "admin" and the password "1234"
-  2. A text will appear below simulating a correct login, or the corresponding error if you write another credentials
+   1. Use the user "admin" and the password "1234"
+   2. A text will appear below simulating a correct login, or the corresponding error if you write another credentials
 ### Credits
 This was made by Meridia Soler Artigues "Arianensis" as a class project
