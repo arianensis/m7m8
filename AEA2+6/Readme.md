@@ -61,6 +61,7 @@ This app is a work in progress. In the future it will include the following feat
 * Ability to export custom data
 * Loading data of stars from an online scientific database
 * Firebase chat
+
 ...and maybe more
 ## Credits
 This was made by Meridia Soler Artigues "Arianensis" as a class project
