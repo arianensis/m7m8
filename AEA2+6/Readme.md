@@ -50,6 +50,17 @@ A form to add new stars to the database. The user can create any star as long as
 * The values are persistently stored via a SQLite database (following the standard Anrdoid MVC and using DBHelper-derived classes)
 * A totally custom class, Star, is used to create and manage the objects, including calls to the database
 * Dialogs are used to confirm actions and Toasts display afterwards
+
 ![Dialog screenshot](./screenshots/dialog.png)
+## ToDo
+This app is a work in progress. In the future it will include the following features
+* Detailed information about stars, accessed by clicking them in the list
+* A more personal style for the forms and buttons
+* Real user and password associations, ability to create and delete users
+* Persistent data to prevent continuous login
+* Ability to export custom data
+* Loading data of stars from an online scientific database
+* Firebase chat
+...and maybe more
 ## Credits
 This was made by Meridia Soler Artigues "Arianensis" as a class project
