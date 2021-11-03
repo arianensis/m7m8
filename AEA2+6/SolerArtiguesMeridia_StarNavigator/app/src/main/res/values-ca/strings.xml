@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StarNavigator</string>
+    <string name="user_name">Usuari/a</string>
+    <string name="user_pass">Contrasenya</string>
+    <string name="button_login">Entrar</string>
+    <string name="coord_sphere">Esfèriques</string>
+    <string name="coord_cube">Cúbiques</string>
+    <string name="coord_ra">Ascensió recta</string>
+    <string name="coord_dec">Declinació</string>
+    <string name="coord_dist">Distància</string>
+    <string name="star_name">Nom</string>
+    <string name="coord">Coordenades</string>
+    <string name="title_add_star">Afegir Nova Estrella</string>
+    <string name="unit_ly">AL</string>
+    <string name="unitname_ly">Any llum</string>
+    <string name="unitname_ly_pl">Anys llum</string>
+    <string name="unitname_deg">Graus</string>
+    <string name="unitname_h">Hores</string>
+    <string name="spectre">Classe espectral</string>
+    <string name="button_create">Crear</string>
+    <string name="create_log_correct">Afegida estrella</string>
+    <string name="create_log_missing">Error: falta algun paràmetre</string>
+    <string name="create_log_repeated">Error: estrella amb aquest nom ja desada</string>
+    <string name="settings">Opcions</string>
+    <string name="login_log_ok">Dades correctes</string>
+    <string name="login_err_user">Usuari no trobat</string>
+    <string name="login_err_pass">Contrasenya incorrecta</string>
+    <string name="sol">El Sol</string>
+    <string name="title_welcome_morning">"Bon dia "</string>
+    <string name="title_welcome_afternoon">"Bona tarda "</string>
+    <string name="title_welcome_evening">"Bona nit "</string>
+    <string name="title_welcome_location">Estrelles més properes</string>
+    <string name="btn_home">Inici</string>
+    <string name="btn_list">Llista</string>
+    <string name="btn_form">Afegir</string>
+    <string name="btn_delete_user">Esborrar dades d\'usuari/a</string>
+    <string name="btn_delete_all">Esborrar totes les dades</string>
+    <string name="title_custom_stars">"afegides per usuari/a: "</string>
+    <string name="title_total_stars">"Total d&apos;estrelles carregades: "</string>
+    <string name="confirm_delete">Confirmar eliminació de dades</string>
+    <string name="restore_button">Restaurar dades per defecte</string>
+    <string name="restore_message">El conjunt de 17 estrelles per defecte s\'ha restaurat</string>
+    <string name="delete_all_message">Totes les estrelles a la base de dades han estat eliminades</string>
+    <string name="delete_custom_message">Totes les estrelles afegides per l\'usuari/a han estat eliminades</string>
+</resources>
