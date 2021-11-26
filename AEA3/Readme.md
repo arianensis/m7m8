@@ -1,7 +1,8 @@
 # AEA3: Second working version of app
 This is a simple working version of the app that is being developed.
 It is centered around a database of known stars, to which the user can add fictional ones.
-**NEW:** This version adds the ability to view details of each star by clicking on its name, and a settings section
+
+**[NEW:]** This version adds the ability to view details of each star by clicking on its name, and a settings section
 ## Structure
 Inside the repository you will find:
 * Readme.md
@@ -51,14 +52,14 @@ A form to add new stars to the database. The user can create any star as long as
 * The values are persistently stored via a SQLite database (following the standard Anrdoid MVC and using DBHelper-derived classes)
 * A totally custom class, Star, is used to create and manage the objects, including calls to the database
 * Dialogs are used to confirm actions and Toasts display afterwards
-* **NEW:** Shared preferences to allow setting a language different from that of the system and adjust the decimal precision of numbers
-* **NEW:** A new custom class has been added to manage shared preferences and auxiliar methods
+* **[NEW]:** Shared preferences to allow setting a language different from that of the system and adjust the decimal precision of numbers
+* **[NEW]:** A new custom class has been added to manage shared preferences and auxiliar methods
 
 ![Dialog screenshot](../AEA2/screenshots/dialog.png)
 ## ToDo
 This app is a work in progress. This version has added the following features
-* **NEW:** Detailed information about stars, accessed by clicking them in the list
-* **NEW:** Persistent data to prevent continuous login
+* **[NEW]:** Detailed information about stars, accessed by clicking them in the list
+* **[NEW]:** Persistent data to prevent continuous login
 The below list are still to be done
 * A more personal style for the forms and buttons
 * Real user and password associations, ability to create and delete users
