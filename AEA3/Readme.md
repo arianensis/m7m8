@@ -38,12 +38,18 @@ This is the less developed part of the app. Currently it only shows the total am
 #### List
 ![List view screenshot](../AEA2/screenshots/list.png)
 
-This view shows a scrollable list of all the stars currently present in the database with their color. In the future, it will show information of each star.
+This view shows a scrollable list of all the stars currently present in the database with their color. **[NEW]:** If you click on the name of a star it will display the next screen.
+#### **[NEW]:** Info
+![Info view screenshot](./screenshots/info.png)
+A simple document showing information of the selected star. It currently displays the name, spectral class and coordinates in both cubic and spherical systems
 #### Add (form)
 ![Form view screenshot](../AEA2/screenshots/form.png)
 
 A form to add new stars to the database. The user can create any star as long as they don't repeat names and fill all the fields. The user can choose the coordinate system between spherical (the most common system in star charts) or cubic (a more absolute system which specifies three coordinates in space). The main 
 [spectral type](https://en.wikipedia.org/wiki/Stellar_classification#Spectral_types "read about spectral types (NOTE: only the classic ones + L are used in the app)") of the star can be set via a scrollbar, which will change colors accordingly.
+#### **[NEW]:** Settings
+![Settings view screenshot](./screenshots/settings.png)
+The app has now a settings section which allow to select one of the three languages from a radio group (various mutually excluding options) and to set the decimal precision of the numbers shown in the Info view. There are also buttons to restore all the configuration and to log out, since the app will not log you out at startup anymore since this version.
 ## Technology used
 * This project is being made in Android Studio and coded in Java
 * The navigation is achieved by a combination of activities+intents and fragments
