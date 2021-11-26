@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment" >
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prop_name">
+
+        <TextView
+            android:id="@+id/tag_class0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spectre"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tag_class1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/prop_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A0"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/prop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lorem ipsum"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/sphericoords_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <LinearLayout
+            android:id="@+id/s_names_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tag_ra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coord_ra"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/tag_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coord_dec"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/tag_dist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coord_dist"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s_colons_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s_values_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prop_ra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/prop_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/prop_dist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s_spaces_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s_units_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unit_ra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_deg"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/unit_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_deg"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/unit_dist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_ly_pl"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/cubecoords_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <LinearLayout
+            android:id="@+id/c_names_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tag_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/tag_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Y"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/tag_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_colons_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_values_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prop_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/prop_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/prop_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_spaces_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_units_col"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unit_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_ly_pl"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:id="@+id/unit_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_ly_pl"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/unit_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unitname_ly_pl"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/coord_sphere"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/coord_cube"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sphericoords_panel" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/coord"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2" />
+
+    <TextView
+        android:id="@+id/prop_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_localStar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sphericoords_panel" />
+
+    <TextView
+        android:id="@+id/prop_local_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/info_localStarVerbose"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prop_local" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
