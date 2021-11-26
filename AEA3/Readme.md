@@ -62,8 +62,6 @@ The app has now a settings section which allow to select one of the three langua
 * Dialogs are used to confirm actions and Toasts display afterwards
 * **[NEW]:** Shared preferences to allow setting a language different from that of the system and adjust the decimal precision of numbers
 * **[NEW]:** A new custom class has been added to manage shared preferences and auxiliar methods
-
-![Dialog screenshot](../AEA2/screenshots/dialog.png)
 ## ToDo
 This app is a work in progress. This version has added the following features
 * **[NEW]:** Detailed information about stars, accessed by clicking them in the list
