@@ -23,7 +23,7 @@ This app is in English. Info about locations may be displayed in the local langu
 
 This app consists of two screens or views described below:
 ### Map
-![Login view screenshot](../AEA4/screenshots/map.png)
+![Map view screenshot](../AEA4/screenshots/map.png)
 
 A standard Google Map which the user can navigate. It is also possible to set the map to the current location, for which the location option must be enabled on the device and permissions given to the app to use it. A single click on the map will place a marker and replace any previous one. Clicking the marker will open the next screen.
 ### Info + pictures
