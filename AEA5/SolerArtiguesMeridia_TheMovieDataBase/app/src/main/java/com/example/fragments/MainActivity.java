@@ -5,6 +5,7 @@ import static com.example.fragments.Config.DefaultConstants.API_KEY;
 import static com.example.fragments.Config.DefaultConstants.SESSION_ID;
 import static com.example.fragments.Config.DefaultConstants.retrofit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -99,5 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Overriding the back button to prevent it from showing outdated information
     }
 }
