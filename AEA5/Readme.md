@@ -25,7 +25,7 @@ This app consists of several screens or views described below:
 ### Main view
 In this part you can navigate between the main functionalities of the app via a bottom menu. It gives access to the following three views by clicking the corresponding icon in the menu:
 #### Search
-![Search view screenshot](./screenshots/searchs.png)
+![Search view screenshot](./screenshots/search.png)
 
 A simple search. It will perform a search request for any type of content (movies, shows, documentaries...) and show up to 20 results below. You can then click on a card to see the details of the item.
 #### Lists
@@ -36,7 +36,7 @@ This view shows the lists I have created so far and how many movies are there in
 ![Info view screenshot](./screenshots/favs.png)
 
 This is a list view but instead of displaying items from a selected list, it will display the movies marked as favourites.
-### Details view view
+### Details view
 ![Details view screenshot](./screenshots/details.png)
 
 This view shows info on a movie or media after clicking on it from a list or search view. It just displays the title and description for testing purposes. Two actions can be performed in this part: Clicking the heart will mark or unmark the item as favourite (the heart will be painted green if the item is marked). Clicking the "+" symbol will show a dialog with all the lists and will let you add that item to one of them.
