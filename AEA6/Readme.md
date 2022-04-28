@@ -1,7 +1,7 @@
 # AEA6: Xat app
 This is the last exercise in the unit to check our general understanding. It consists on commenting the code from an app made by [our teacher](https://github.com/martamillanlom)
 
-![Xat app and take my money!](./meme.png)
+![Xat app and take my money!](./meme.jpg)
 
 ## Structure
 Inside the repository you will find:
