@@ -44,4 +44,4 @@ This view shows info on a movie or media after clicking on it from a list or sea
 * This project is being made in Android Studio and coded in Java. It also includes the use of the API mentioned above and the [Retrofit](https://square.github.io/retrofit/) and [Glide](https://guides.codepath.com/android/Displaying-Images-with-the-Glide-Library) custom libraries.
 
 ## Credits
-This was made by Meridia Soler Artigues "Arianensis" as a class project upon templates by [our teacher](https://github.com/martamillanlom)
+This was made by Meridia Soler Artigues "Arianensis" as a class project upon templates aby [our teacher](https://github.com/martamillanlom)
