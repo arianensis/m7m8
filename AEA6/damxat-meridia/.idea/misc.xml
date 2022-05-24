@@ -6,10 +6,12 @@
         <entry key="..\:/Users/marta/AndroidStudioProjects/DAMXAT/app/src/main/res/drawable/background_xat_left.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/marta/AndroidStudioProjects/DAMXAT/app/src/main/res/drawable/input.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13561024610748368" />
+        <entry key="app/src/main/res/layout/activity_record_audio.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.13561024610748368" />
         <entry key="app/src/main/res/layout/fragment_groups.xml" value="0.13561024610748368" />
         <entry key="app/src/main/res/layout/fragment_my_xats.xml" value="0.13561024610748368" />
         <entry key="app/src/main/res/layout/fragment_user.xml" value="0.13561024610748368" />
+        <entry key="app/src/main/res/layout/fragment_xat.xml" value="0.33" />
       </map>
     </option>
   </component>

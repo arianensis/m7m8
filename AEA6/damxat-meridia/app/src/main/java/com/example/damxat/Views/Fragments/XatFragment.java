@@ -1,18 +1,28 @@
 package com.example.damxat.Views.Fragments;
 
+import static android.app.Activity.RESULT_OK;
+
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.speech.RecognizerIntent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.damxat.Adapter.RecyclerXatAdapter;
@@ -31,6 +41,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 public class XatFragment extends Fragment {
 
@@ -45,6 +56,10 @@ public class XatFragment extends Fragment {
 
     XatGroup group;
     String groupName;
+
+    ImageButton buttonMic;
+    TextView textRecord;
+    private int RecordAudioRequestCode;
 
     public XatFragment() {
         // Required empty public constructor
@@ -75,6 +90,7 @@ public class XatFragment extends Fragment {
 
         ImageButton btnMessage = view.findViewById(R.id.btnMessage);
         EditText txtMessage = view.findViewById(R.id.txtMessage);
+        textRecord = txtMessage;
 
         // Listener for the send button
         btnMessage.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +106,26 @@ public class XatFragment extends Fragment {
                 }
                 // Set the field to empty to write a new message
                 txtMessage.setText("");
+            }
+        });
+
+        textRecord = txtMessage;
+
+        if(ContextCompat.checkSelfPermission(view.getContext(), Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                ActivityCompat.requestPermissions(MainActivity.mainActivity,new String[]{Manifest.permission.RECORD_AUDIO},RecordAudioRequestCode);
+            }
+        }
+
+        buttonMic = view.findViewById(R.id.button_mic);
+        buttonMic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+                speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Hola, digues quelcom!");
+                startActivityForResult(speechRecognizerIntent, 1984);
             }
         });
 
@@ -232,5 +268,23 @@ public class XatFragment extends Fragment {
         RecyclerXatAdapter adapter = new RecyclerXatAdapter(arrayXats, getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == RecordAudioRequestCode && grantResults.length > 0 ){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                Toast.makeText(view.getContext(),"Permission Granted",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK);
+        ArrayList<String> result=data.getStringArrayListExtra( RecognizerIntent.EXTRA_RESULTS );
+        textRecord.setText(result.get(0));
     }
 }

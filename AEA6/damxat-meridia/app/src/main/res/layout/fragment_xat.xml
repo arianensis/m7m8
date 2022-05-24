@@ -26,12 +26,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="4dp"
             android:layout_marginBottom="16dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnMessage"
+            app:layout_constraintEnd_toStartOf="@+id/button_mic"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
@@ -43,6 +43,16 @@
             android:src="@drawable/ic_send"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/mic_on"
+            app:layout_constraintBottom_toBottomOf="@+id/btnMessage"
+            app:layout_constraintEnd_toStartOf="@+id/btnMessage"
+            app:layout_constraintTop_toTopOf="@+id/btnMessage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

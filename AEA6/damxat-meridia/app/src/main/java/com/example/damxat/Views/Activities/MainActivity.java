@@ -29,11 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseUser firebaseUser;
     Toolbar toolbar;
+    public static MainActivity mainActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mainActivity=this;
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyXatsFragment()).commit();
 
