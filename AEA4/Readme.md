@@ -1,4 +1,4 @@
-# AEA4: Second working version of app
+# AEA4: Mini App with APIs
 A little app to test the functionalities of APIs and android permissions. This features [Google Maps](https://developers.google.com/maps/documentation/android-sdk/), [Flickr](https://www.flickr.com/services/api/explore/flickr.photos.search) and [Sunrise-Sunset](https://sunrise-sunset.org/api) APIs.
 
 ## Structure

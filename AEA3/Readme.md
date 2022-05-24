@@ -66,6 +66,7 @@ The app has now a settings section which allow to select one of the three langua
 This app is a work in progress. This version has added the following features
 * **[NEW]:** Detailed information about stars, accessed by clicking them in the list
 * **[NEW]:** Persistent data to prevent continuous login
+
 The below list are still to be done
 * A more personal style for the forms and buttons
 * Real user and password associations, ability to create and delete users
